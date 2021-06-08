@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aalok Tanwar</title>
+    <link rel="stylesheet" href="styles.css"
+</head>
+<body>
+    <marquee direction="right">Aalok Tanwar - 20BCG10044</marquee>
+    <form class="project-form">
+        <div class="project-form">
+            <label for="name">Name :</label>
+            <input id="name" type="text" placeholder="name">
+        </div>
+        <div class="project-form">
+            <label for="email">Email :</label>
+            <input id="email" type="email" placeholder="email">
+        </div>
+        <div class="project-form">
+            <label for="password">Password :</label>
+            <input id="password" type="password" placeholder="password">
+        </div>
+        <div class="project-form">
+            <label for="age">Age :</label>
+            <input id="age" type="number" placeholder="age">
+        </div>
+        <div class="project-form">
+            <label for="Birthdate">Birthdate :</label>
+            <input id="Birthdate" type="date">
+        </div>
+
+        <div>
+            <button id="reset" type="reset">Reset</button>
+            <button id="submit"type="submit">Submit</button>
+        </div>
+        
+    </form>
+    <hr>
+    <script>
+        function guessNumber(){
+            const random = Math.floor(Math.random()*10)+1;
+            let number = parseInt(prompt('Guess a number from 1 to 10: '));
+            while(number !== random){
+                number = parseInt(prompt('Guess a number from 1 to 10: '));
+            }
+            if(number == random){
+                alert('You guessed the correct number.');
+            }
+        }
+    </script>
+    <center><h1>Guess the number game</h1></center>
+    <center><button onclick="guessNumber()" type="button">Play now!</button></center>
+</body>
+</html>

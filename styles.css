@@ -1,0 +1,31 @@
+form.project-form {
+    display: table;
+    padding: 20px;
+    border: thick double #0a1a20;
+    margin: 50px 50px 80px 250px;
+       
+}
+div.project-form{
+    display: table-row;
+}
+
+label,input {
+    display: table-cell;
+    margin-bottom: 10px;
+}
+label{
+    padding-right: 10px;
+}
+body{
+    background-color: rgb(25, 203, 235);
+    color: rgb(19, 17, 17);
+}
+#reset{
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: 10px;
+}
+#submit{
+    padding-right: 20px;
+    padding-left: 20px;
+}
